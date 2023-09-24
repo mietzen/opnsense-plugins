@@ -1,0 +1,3 @@
+#!/usr/bin/true
+# This is a dummy file which will be overwritten by /usr/local/opnsense/scripts/OPNsense/caddyv2/install_caddy.py
+# It insures that uninstall removes all files.

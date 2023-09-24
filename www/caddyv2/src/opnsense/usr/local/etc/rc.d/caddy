@@ -1,0 +1,17 @@
+#!/bin/sh
+
+. /etc/rc.subr
+
+name="caddy"
+caddy_chdir="/etc/caddy"
+rcvar="caddy_enable"
+caddy_user="root"
+caddy_command="/usr/local/bin/caddy run --config /etc/caddy/Caddyfile --envfile /etc/caddy/.env"
+pidfile="/var/run/${name}.pid"
+command="/usr/sbin/daemon"
+command_args="-P ${pidfile} -r -f ${caddy_command}"
+
+load_rc_config $name
+: ${caddy_enable:=no}
+
+run_rc_command "$1"

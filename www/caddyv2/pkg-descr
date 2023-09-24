@@ -1,0 +1,5 @@
+Caddy 2 is a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go.
+
+It's functionality includes HTTPS, reverse proxy, load balancing, static file hosting, and customizable middleware. It simplifies web server setup and management.
+
+WWW: https://caddyserver.com/
